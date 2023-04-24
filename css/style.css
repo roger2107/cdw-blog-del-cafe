@@ -25,8 +25,7 @@ body{
 
 /*Globales*/
 .contenedor{
-    max-width: 120rem;
-    width: 90%;
+    width: min(90%, 120rem);
     margin: 0 auto;
 }
 
@@ -93,6 +92,9 @@ img{
     }
 }
 
+.barra{
+    padding-top: 4rem;
+}
 
 @media(min-width: 768px){
     .barra{
@@ -100,7 +102,10 @@ img{
         justify-content: space-between;
         align-items: center;
     }
+    
 }
+
+
 
 .logo{
     color: var(--blanco);
@@ -199,3 +204,9 @@ img{
     font-size: 2rem;
 }
 
+/*Footer*/
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
